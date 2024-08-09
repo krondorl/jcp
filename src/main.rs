@@ -19,7 +19,15 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 38] = [
+const NOUNS: [Noun; 40] = [
+    Noun {
+        singular: "demon",
+        plural: "demons",
+    },
+    Noun {
+        singular: "utility",
+        plural: "utilities",
+    },
     Noun {
         singular: "wad file",
         plural: "wad files",
@@ -174,7 +182,27 @@ const NOUNS: [Noun; 38] = [
     },
 ];
 
-const VERBS: [Verb; 15] = [
+const VERBS: [Verb; 20] = [
+    Verb {
+        present: "update",
+        past: "updated",
+    },
+    Verb {
+        present: "allow",
+        past: "allowed",
+    },
+    Verb {
+        present: "combine",
+        past: "combined",
+    },
+    Verb {
+        present: "stop",
+        past: "stopped",
+    },
+    Verb {
+        present: "check",
+        past: "checked",
+    },
     Verb {
         present: "move",
         past: "moved",
@@ -237,7 +265,8 @@ const VERBS: [Verb; 15] = [
     },
 ];
 
-const ADJECTIVES: [&str; 26] = [
+const ADJECTIVES: [&str; 27] = [
+    "invisible",
     "unique",
     "clean",
     "turbulent",
