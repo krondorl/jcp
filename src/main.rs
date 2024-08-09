@@ -17,7 +17,19 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 40] = [
+const NOUNS: [Noun; 43] = [
+    Noun {
+        singular: "trigger",
+        plural: "triggers",
+    },
+    Noun {
+        singular: "enforcer",
+        plural: "enforcers",
+    },
+    Noun {
+        singular: "dog",
+        plural: "dogs",
+    },
     Noun {
         singular: "demon",
         plural: "demons",
@@ -326,7 +338,7 @@ fn main() {
     println!();
     println!("Generating plan notes...");
     println!();
-    for _i in 0..13 {
+    for _i in 0..14 {
         let sentence = generate_sentence(VerbType::Past);
         println!("{sentence}");
     }
