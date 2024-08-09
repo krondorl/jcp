@@ -19,7 +19,59 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 21] = [
+const NOUNS: [Noun; 35] = [
+    Noun {
+        singular: "twirling gib",
+        plural: "twirling gibs",
+    },
+    Noun {
+        singular: "server protocol number",
+        plural: "server protocol numbers",
+    },
+    Noun {
+        singular: "internet code",
+        plural: "internet codes",
+    },
+    Noun {
+        singular: "crushing issue",
+        plural: "crushing issues",
+    },
+    Noun {
+        singular: "origin bug",
+        plural: "origin bugs",
+    },
+    Noun {
+        singular: "radius damage",
+        plural: "radius damages",
+    },
+    Noun {
+        singular: "pak file support",
+        plural: "pak file support",
+    },
+    Noun {
+        singular: "screen warp",
+        plural: "screen warps",
+    },
+    Noun {
+        singular: "clamp velocity",
+        plural: "clamp velocities",
+    },
+    Noun {
+        singular: "respawn rule",
+        plural: "respawn rules",
+    },
+    Noun {
+        singular: "direction protocol",
+        plural: "direction protocols",
+    },
+    Noun {
+        singular: "armor color flash",
+        plural: "armor color flashes",
+    },
+    Noun {
+        singular: "alias model",
+        plural: "alias models",
+    },
     Noun {
         singular: "level",
         plural: "levels",
@@ -104,9 +156,13 @@ const NOUNS: [Noun; 21] = [
         singular: "light",
         plural: "lights",
     },
+    Noun {
+        singular: "precache",
+        plural: "precaches",
+    },
 ];
 
-const VERBS: [Verb; 8] = [
+const VERBS: [Verb; 9] = [
     Verb {
         present: "add",
         past: "added",
@@ -139,9 +195,18 @@ const VERBS: [Verb; 8] = [
         present: "improve",
         past: "improved",
     },
+    Verb {
+        present: "unify",
+        past: "unified",
+    },
 ];
 
-const ADJECTIVES: [&str; 17] = [
+const ADJECTIVES: [&str; 23] = [
+    "negative",
+    "extra",
+    "absolute",
+    "flickering",
+    "weird",
     "referential",
     "close",
     "far",
@@ -159,6 +224,7 @@ const ADJECTIVES: [&str; 17] = [
     "dark",
     "frozen",
     "stuck",
+    "flying",
 ];
 
 const MAX_VERBS: usize = VERBS.len();
@@ -190,7 +256,7 @@ fn generate_sentence(verb_type: VerbType) -> String {
 
 fn main() {
     println!("John Carmack Planner");
-    println!("Generate random plan files like John Carmack did");
+    println!("Generate random plan files in John Carmack style.");
     println!();
     println!("Generating plan notes...");
     println!();
