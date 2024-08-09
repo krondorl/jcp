@@ -7,13 +7,11 @@ enum VerbType {
     Past,
 }
 
-#[warn(dead_code)]
 struct Noun {
     singular: &'static str,
     plural: &'static str,
 }
 
-#[warn(dead_code)]
 struct Verb {
     present: &'static str,
     past: &'static str,
