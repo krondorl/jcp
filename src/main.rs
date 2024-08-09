@@ -19,7 +19,15 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 35] = [
+const NOUNS: [Noun; 37] = [
+    Noun {
+        singular: "NaN stuff",
+        plural: "NaN stuffs",
+    },
+    Noun {
+        singular: "ogre sound",
+        plural: "ogre sounds",
+    },
     Noun {
         singular: "twirling gib",
         plural: "twirling gibs",
@@ -162,7 +170,19 @@ const NOUNS: [Noun; 35] = [
     },
 ];
 
-const VERBS: [Verb; 9] = [
+const VERBS: [Verb; 12] = [
+    Verb {
+        present: "clean up",
+        past: "cleaned up",
+    },
+    Verb {
+        present: "fix",
+        past: "fixed",
+    },
+    Verb {
+        present: "change",
+        past: "changed",
+    },
     Verb {
         present: "add",
         past: "added",
@@ -201,7 +221,10 @@ const VERBS: [Verb; 9] = [
     },
 ];
 
-const ADJECTIVES: [&str; 23] = [
+const ADJECTIVES: [&str; 26] = [
+    "unique",
+    "clean",
+    "turbulent",
     "negative",
     "extra",
     "absolute",
