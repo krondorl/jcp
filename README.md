@@ -1,3 +1,5 @@
+<img src="doc/carmack_vector.svg" width="272"/>
+
 # John Carmack Planner (JCP)
 
 Generate random plan files in John Carmack style.
