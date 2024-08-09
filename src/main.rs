@@ -19,7 +19,11 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 37] = [
+const NOUNS: [Noun; 38] = [
+    Noun {
+        singular: "wad file",
+        plural: "wad files",
+    },
     Noun {
         singular: "NaN stuff",
         plural: "NaN stuffs",
@@ -170,7 +174,19 @@ const NOUNS: [Noun; 37] = [
     },
 ];
 
-const VERBS: [Verb; 12] = [
+const VERBS: [Verb; 15] = [
+    Verb {
+        present: "move",
+        past: "moved",
+    },
+    Verb {
+        present: "work on",
+        past: "worked on",
+    },
+    Verb {
+        present: "rebuild",
+        past: "rebuilt",
+    },
     Verb {
         present: "clean up",
         past: "cleaned up",
@@ -283,7 +299,7 @@ fn main() {
     println!();
     println!("Generating plan notes...");
     println!();
-    for _i in 0..10 {
+    for _i in 0..13 {
         let sentence = generate_sentence(VerbType::Past);
         println!("{sentence}");
     }
