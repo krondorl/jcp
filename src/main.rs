@@ -18,7 +18,27 @@ struct Verb {
     past: &'static str,
 }
 
-const NOUNS: [Noun; 43] = [
+const NOUNS: [Noun; 48] = [
+    Noun {
+        singular: "grunt",
+        plural: "grunts",
+    },
+    Noun {
+        singular: "zombie",
+        plural: "zombies",
+    },
+    Noun {
+        singular: "knight",
+        plural: "knights",
+    },
+    Noun {
+        singular: "rotfish",
+        plural: "rotfishes",
+    },
+    Noun {
+        singular: "scrag",
+        plural: "scrags",
+    },
     Noun {
         singular: "trigger",
         plural: "triggers",
@@ -193,7 +213,7 @@ const NOUNS: [Noun; 43] = [
     },
 ];
 
-const VERBS: [Verb; 20] = [
+const VERBS: [Verb; 30] = [
     Verb {
         present: "update",
         past: "updated",
@@ -274,9 +294,50 @@ const VERBS: [Verb; 20] = [
         present: "unify",
         past: "unified",
     },
+    Verb {
+        present: "spawn",
+        past: "spawned",
+    },
+    Verb {
+        present: "optimize",
+        past: "optimized",
+    },
+    Verb {
+        present: "make",
+        past: "made",
+    },
+    Verb {
+        present: "cache",
+        past: "cached",
+    },
+    Verb {
+        present: "uncache",
+        past: "uncache",
+    },
+    Verb {
+        present: "do",
+        past: "did",
+    },
+    Verb {
+        present: "begin",
+        past: "began",
+    },
+    Verb {
+        present: "finish",
+        past: "finished",
+    },
+    Verb {
+        present: "kill",
+        past: "killed",
+    },
+    Verb {
+        present: "fade",
+        past: "fade",
+    },
 ];
 
-const ADJECTIVES: [&str; 27] = [
+const ADJECTIVES: [&str; 32] = [
+    "animating",
     "invisible",
     "unique",
     "clean",
@@ -304,6 +365,10 @@ const ADJECTIVES: [&str; 27] = [
     "frozen",
     "stuck",
     "flying",
+    "swimming",
+    "looping",
+    "spinning",
+    "dynamic",
 ];
 
 const MAX_VERBS: usize = VERBS.len();
