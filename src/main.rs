@@ -1,5 +1,5 @@
 // Copyright 2024 Adam Burucs. MIT license.
-use rand::prelude::*;
+use tinyrand::{RandRange, StdRand};
 
 #[derive(PartialEq)]
 enum VerbType {
@@ -309,12 +309,11 @@ const MAX_VERBS: usize = VERBS.len();
 const MAX_NOUNS: usize = NOUNS.len();
 const MAX_ADJECTIVES: usize = ADJECTIVES.len();
 
-fn generate_sentence(verb_type: VerbType) -> String {
-    let mut rng = thread_rng();
-    let rand_plural = rng.gen_range(0..1);
-    let rand_verb = rng.gen_range(0..MAX_VERBS);
-    let rand_adjective = rng.gen_range(0..MAX_ADJECTIVES);
-    let rand_noun = rng.gen_range(0..MAX_NOUNS);
+fn generate_sentence(verb_type: VerbType, rng: &mut StdRand) -> String {
+    let rand_plural = rng.next_range(0usize..2usize);
+    let rand_verb = rng.next_range(0usize..MAX_VERBS);
+    let rand_adjective = rng.next_range(0usize..MAX_ADJECTIVES);
+    let rand_noun = rng.next_range(0usize..MAX_NOUNS);
 
     let verb: &str = if verb_type == VerbType::Present {
         VERBS[rand_verb].present
@@ -338,8 +337,9 @@ fn main() {
     println!();
     println!("Generating plan notes...");
     println!();
+    let mut rng = StdRand::default();
     for _i in 0..14 {
-        let sentence = generate_sentence(VerbType::Past);
+        let sentence = generate_sentence(VerbType::Past, &mut rng);
         println!("{sentence}");
     }
 }
