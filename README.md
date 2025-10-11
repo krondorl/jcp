@@ -56,5 +56,5 @@ See [the LICENSE file](LICENSE).
 
 ## History
 
-October 2025: added new words for randomize, refactored using tinyrand and tinyrand-std.
-August 2024: project start.
+- October 2025: added new words for randomize, refactored using tinyrand and tinyrand-std.
+- August 2024: project start.
