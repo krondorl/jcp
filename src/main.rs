@@ -1,5 +1,6 @@
 // Copyright 2024 Adam Burucs. MIT license.
-use tinyrand::{RandRange, StdRand};
+use tinyrand::{Rand, RandRange, Seeded, StdRand};
+use tinyrand_std::clock_seed::ClockSeed;
 
 #[derive(PartialEq)]
 enum VerbType {
@@ -337,7 +338,8 @@ fn main() {
     println!();
     println!("Generating plan notes...");
     println!();
-    let mut rng = StdRand::default();
+    let seed = ClockSeed::default().next_u64();
+    let mut rng = StdRand::seed(seed);
     for _i in 0..14 {
         let sentence = generate_sentence(VerbType::Past, &mut rng);
         println!("{sentence}");
