@@ -46,6 +46,10 @@ In the project folder, execute: `cargo run`
 
 Run this command: `cargo build --release`
 
+## Binary Optimization Case Study
+
+You can read the study in [optimize.md](optimize.md)
+
 ## License
 
 See [the LICENSE file](LICENSE).
