@@ -1,4 +1,4 @@
-// Copyright 2024 Adam Burucs. MIT license.
+// Copyright 2024-present Adam Burucs. MIT license.
 use tinyrand::{Rand, RandRange, Seeded, StdRand};
 use tinyrand_std::clock_seed::ClockSeed;
 
