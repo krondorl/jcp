@@ -1,6 +1,6 @@
 <img src="assets/carmack_vector.svg" width="272"/>
 
-# John Carmack Planner (JCP)
+# John Carmack Planner (jcp)
 
 Generate random plan files in John Carmack style.
 
@@ -56,7 +56,7 @@ You can read the study in [optimize.md](optimize.md)
 
 ## Disclaimer
 
-John Carmack Planner (JCP) is an independent, unofficial project created for educational and entertainment purposes.
+John Carmack Planner (jcp) is an independent, unofficial project created for educational and entertainment purposes.
 
 This project is not affiliated with, endorsed by, sponsored by, or associated with John Carmack, id Software, Meta, or any other organization with which John Carmack is or has been affiliated.
 
