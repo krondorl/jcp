@@ -4,6 +4,10 @@
 
 Generate random plan files in John Carmack style.
 
+## Unofficial / Not affiliated with John Carmack
+
+Please [read the Disclaimer](#disclaimer).
+
 ## What are plan files?
 
 Carmack used to make notes and plans in text files during game development.
@@ -50,11 +54,24 @@ Run this command: `cargo build --release`
 
 You can read the study in [optimize.md](optimize.md)
 
+## Disclaimer
+
+John Carmack Planner (JCP) is an independent, unofficial project created for educational and entertainment purposes.
+
+This project is not affiliated with, endorsed by, sponsored by, or associated with John Carmack, id Software, Meta, or any other organization with which John Carmack is or has been affiliated.
+
+The application generates fictional, randomly constructed planning text inspired by the general style and structure of publicly available planning notes associated with John Carmack. Generated content should not be interpreted as actual statements, writings, opinions, plans, or communications from John Carmack.
+
+The name “John Carmack” is used solely for descriptive and referential purposes. All trademarks, names, and other intellectual property belong to their respective owners.
+
+The software and generated content are provided “as is,” without warranties of any kind. The authors and contributors are not responsible for any damages, losses, or consequences resulting from the use of this software or its generated content.
+
 ## License
 
 See [the LICENSE file](LICENSE).
 
 ## History
 
+- September 2026: extended vocabulary, added social preview and disclaimer.
 - October 2025: added new words for randomize, refactored using tinyrand and tinyrand-std.
 - August 2024: project start.
