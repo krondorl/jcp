@@ -1,4 +1,4 @@
-<img src="doc/carmack_vector.svg" width="272"/>
+<img src="assets/carmack_vector.svg" width="272"/>
 
 # John Carmack Planner (JCP)
 
@@ -68,10 +68,19 @@ The software and generated content are provided “as is,” without warranties 
 
 ## License
 
-See [the LICENSE file](LICENSE).
+This repository uses separate licenses for source code and assets.
+
+- **Source code:** MIT License  
+  Copyright (c) 2024-present Adam Burucs.
+  See [LICENSE](LICENSE).
+
+- **Assets:** Creative Commons Attribution-NonCommercial 4.0 International
+  (CC BY-NC 4.0).
+  This applies to files in the `assets/` directory unless otherwise stated.
+  See [assets/LICENSE](assets/LICENSE).
 
 ## History
 
-- September 2026: extended vocabulary, added social preview and disclaimer.
+- September 2026: extended vocabulary, added social preview and disclaimer, updated licenses.
 - October 2025: added new words for randomize, refactored using tinyrand and tinyrand-std.
 - August 2024: project start.
