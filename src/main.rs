@@ -3,6 +3,7 @@
 mod adjectives;
 mod generator;
 mod nouns;
+mod utils;
 mod verbs;
 
 use generator::generate_sentence;
@@ -11,12 +12,7 @@ use tinyrand_std::clock_seed::ClockSeed;
 use verbs::VerbType;
 
 fn main() {
-    println!();
-    println!("John Carmack Planner");
-    println!("Generate random plan files in John Carmack style.");
-    println!();
-    println!("Generating plan notes...");
-    println!();
+    utils::print_introduction();
     let seed = ClockSeed.next_u64();
     let mut rng = StdRand::seed(seed);
     for _i in 0..14 {
