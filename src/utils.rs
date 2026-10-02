@@ -1,3 +1,5 @@
+// Copyright 2024-present Adam Burucs. MIT license.
+
 pub fn print_introduction() {
     println!();
     println!("John Carmack Planner");
